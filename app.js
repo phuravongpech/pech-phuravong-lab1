@@ -1,6 +1,9 @@
-const express = require("express");
+import express from "express";
+
 const app = express();
+
 app.get("/", (req, res) => {
-  res.send("Hello, GitHub Actions! TEst 2");
+  res.send("Hello, GitHub Actions!");
 });
-module.exports = app;
+
+export default app;
